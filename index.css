@@ -15,14 +15,36 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
+header .logo h1 {
     font-size: 2em;
     font-weight: bold;
+}
+
+nav ul.menu {
+    list-style: none;
+}
+
+nav ul.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    color: #FF5733; /* Cor laranja ao passar o mouse */
 }
 
 /* Estilizando o conteúdo principal */
@@ -57,7 +79,7 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn:hover {
@@ -79,5 +101,27 @@ main {
 body {
     animation: fadeIn 1s ease-in;
 }
+/* Resto dos estilos como mencionado anteriormente */
 
+/* Estilizando o carrossel */
+.carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
 
+.slide {
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
