@@ -1,0 +1,83 @@
+/* Reset de estilos padrão do navegador */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333; /* Texto escuro */
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilizando o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilizando a seção de produtos em destaque */
+.destaque {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destaque h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.destaque:hover {
+    transform: scale(1.05);
+}
+
+/* Estilizando botões elegantes com animações */
+.btn {
+    background-color: #FF5733; /* Cor laranja */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF8C60; /* Cor ligeiramente mais clara ao passar o mouse */
+    transform: scale(1.05);
+}
+
+/* Estilizando animação de entrada de página */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplicando a animação de entrada à página */
+body {
+    animation: fadeIn 1s ease-in;
+}
+
+
